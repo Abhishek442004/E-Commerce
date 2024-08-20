@@ -1,0 +1,114 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #111;
+  height: 100vh;
+  background-image: url('../../assets/red-light-round-podium-black-background-mock-up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  padding: 20px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.hero {
+  padding: 40px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+}
+
+
+.carousel-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+
+
+
+
+
+
+/* .moving-cards-container {
+  width: 100vb;
+  max-width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.moving-cards-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.moving-cards-track .card:nth-child(3n + 2) {
+  transform: scale(1.1);
+  z-index: 1;
+} */

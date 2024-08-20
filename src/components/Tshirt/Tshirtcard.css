@@ -1,0 +1,47 @@
+.card {
+    width: 250px;
+    padding: 0px 20px;
+    border-radius: 15px;
+    background-color: #682e9f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0px 20px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #bbb;
+    margin-left: 5px;
+  }
+  
+  .discount {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  

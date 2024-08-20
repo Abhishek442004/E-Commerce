@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../auth/Login.css'
+import './Login.css'
 
 const registerUser = async ({ name, number, email, password }) => {
   // Implement your registration logic here

@@ -13,6 +13,7 @@ export default function ShirtPage() {
             imageSrc={tshirt.image}
             title={tshirt.name}
             price={tshirt.discounted_price}
+            description={tshirt.description} // Add the description prop to the TshirtCard component
             originalPrice={tshirt.original_price}
             discount={`${tshirt.discount}%`}
           />

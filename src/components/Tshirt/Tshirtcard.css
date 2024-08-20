@@ -1,47 +1,66 @@
 .card {
-    width: 250px;
-    padding: 0px 20px;
-    border-radius: 15px;
-    background-color: #682e9f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    margin: 0px 20px;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .card-info h3 {
-    margin: 10px 0;
-    font-size: 20px;
-  }
-  
-  .description {
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .price {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    color: #bbb;
-    margin-left: 5px;
-  }
-  
-  .discount {
-    color: #ff4d4d;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
+  width: 250px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #682e9f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #fff;
+  margin: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: drop-shadow(10px -8px 2px rgba(36, 35, 35, 0.507));
+}
+
+.card-info {
+  padding: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  color: #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.card-description {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.discounted-price {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #bbb;
+  margin-left: 10px;
+}
+
+.discount {
+  color: #ff4d4d;
+  font-weight: bold;
+}

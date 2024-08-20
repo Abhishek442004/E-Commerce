@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../auth/Login.css';
+import './Login.css';
 
-const loginUser = async ({ email, password }) => {
-  try {
-    const response = await axios.post('http://localhost:5000/api/login', { email, password });
-    return response.status === 200;
-  } catch (error) {
-    return false;
-  }
-};
+// const loginUser = async ({ email, password }) => {
+//   try {
+//     const response = await axios.post('http://localhost:5000/api/login', { email, password });
+//     return response.status === 200;
+//   } catch (error) {
+//     return false;
+//   }
+// };
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -21,12 +21,13 @@ const Login = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    const success = await loginUser({ email, password });
-    if (success) {
-      navigate('/dashboard');
-    } else {
-      alert('Invalid email or password');
-    }
+    // const success = await loginUser({ email, password });
+    console.log("form submitted", formData);
+    // if (success) {
+    //   navigate('/dashboard');
+    // } else {
+    //   alert('Invalid email or password');
+    // }
   };
 
   return (

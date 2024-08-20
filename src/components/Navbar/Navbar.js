@@ -2,13 +2,14 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import logo from "../../assets/Logo1.png"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src="logo.png" alt="Logo" className="logo" />
-        <h1 className="site-name">YourWebsite</h1>
+        <img src={logo} alt="Logo" className="logo" />
+        <h1 className="site-name">Dripentious</h1>
       </div>
       <div className="navbar-right">
         <ul className="nav-links">
@@ -33,7 +34,10 @@ export default function Navbar() {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link to="/register">Register</Link>
+            <Link className="register" to="/signup">Signin</Link>
+          </li>
+          <li>
+            <Link className="register" to="/login">Login</Link>
           </li>
         </ul>
         <Link to="/cart" className="cart-link">

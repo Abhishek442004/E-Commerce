@@ -12,6 +12,7 @@
     height: 100%;
 }
 
+
 .header {
     padding: 20px;
 }
@@ -34,6 +35,9 @@
     background-color: transparent;
 }
 
+.carousel-control-prev{
+    background-color: none;
+}
 
 .carousel-button {
     background: none;

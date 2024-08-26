@@ -3,10 +3,11 @@ import image2 from "./assets/tshirt/WavesT_front.png";
 import image3 from "./assets/tshirt/ExplicitT_front.png";
 import image4 from "./assets/tshirt/ThunderT_front.png";
 import image5 from "./assets/tshirt/TView.png";
+import image6 from "./assets/tshirt/TojiView_back.png";
 const TshirtData = [
     {
         id: 1,
-        name: "T-shirt Black",
+        name: "Tree T-shirt Black ",
         discounted_price: 15.99,
         original_price: 20.99,
         image: image1,
@@ -15,7 +16,7 @@ const TshirtData = [
     },
     {
         id: 2,
-        name: "T-shirt Blue",
+        name: " Black T-shirt ",
         discounted_price: 17.99,
         original_price: 22.99,
         image: image2,
@@ -24,7 +25,7 @@ const TshirtData = [
     },
     {
         id: 3,
-        name: "T-shirt Green",
+        name: " Explicit T-shirt",
         discounted_price: 19.99,
         original_price: 24.99,
         image: image3,
@@ -33,7 +34,7 @@ const TshirtData = [
     },
     {
         id: 4,
-        name: "T-shirt Red",
+        name: "Thunder T-shirt ",
         discounted_price: 21.99,
         original_price: 26.99,
         image: image4,
@@ -42,12 +43,21 @@ const TshirtData = [
     },
     {
         id: 5,
-        name: "T-shirt Yellow",
+        name: "R32 GTR T-shirt ",
         discounted_price: 23.99,
         original_price: 28.99,
         image: image5,
         description: "This stylish t-shirt features a yellow color.",
         discount: 10,
+    },
+    {
+        id: 6,
+        name: "Toji T-shirt ",
+        discounted_price: 25.99,
+        original_price: 30.99,
+        image: image6,
+        description: "This classic t-shirt features Toji at back.",
+        discount: 5,
     }
 ];
 

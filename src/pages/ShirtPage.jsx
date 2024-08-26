@@ -1,6 +1,7 @@
 import React from "react";
 import TshirtCard from "../components/Tshirt/Tshirtcard";
-import TshirtData from "../TshirtData"; // Import the TshirtData array
+import TshirtData from '../TshirtData';
+ // Import the TshirtData array
 import "./ShirtPage.css";
 
 export default function ShirtPage() {
@@ -15,7 +16,7 @@ export default function ShirtPage() {
             price={tshirt.discounted_price}
             description={tshirt.description} // Add the description prop to the TshirtCard component
             originalPrice={tshirt.original_price}
-            discount={`${tshirt.discount}%`}
+            discount={`${tshirt.discount}`}
           />
         ))}
       </div>

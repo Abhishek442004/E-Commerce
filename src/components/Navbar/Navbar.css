@@ -1,4 +1,18 @@
 /* Navbar container */
+@font-face{
+  font-family: 'Samarkan';
+  src: url('../../font/SAMAN___.TTF') format('truetype');
+}
+
+.site-name{
+  color: rgb(166,16,30);
+  font-family: 'Samarkan', sans-serif;
+  position: relative;
+  left: -12px;
+  top: 10px;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -8,7 +22,7 @@
     color: #fff;
   }
   
-  /* Left side of the navbar */
+
   .navbar-left {
     display: flex;
     align-items: center;

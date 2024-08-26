@@ -14,8 +14,9 @@ const HomePage = () => {
             <Navbar />
             <div className="home-container">
                 <header className="header">
-                    <h1>Welcome to Dripentious</h1>
+                
                 </header>
+
                 <div id="carouselExampleDark" className="carousel carousel-dark slide">
                   <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -23,21 +24,21 @@ const HomePage = () => {
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
                 <div className="carousel-inner"> 
-                  <div className="carousel-item active" data-bs-interval="5000">
+                  <div className="carousel-item active" data-bs-interval="1000">
                     <img src={TBlack} className="tshirt-image" style={{ width: '1000px', height: '800px', objectFit: 'cover', margin: '0 auto', display: 'block' }} alt="T-shirt Black"/>
                     <div className="carousel-caption d-none d-md-block">
                       <h5>First slide label</h5>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, expedita.</p>
                     </div>
                   </div>
-                <div className="carousel-item" data-bs-interval="5000">
+                <div className="carousel-item" data-bs-interval="1000">
                   <img src={TWhite} className="tshirt-image" style={{ width: '1000px', height: '800px', objectFit: 'cover', margin: '0 auto', display: 'block' }} alt="T-shirt White"/>
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, magni!</p>
                   </div>
                 </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="1000">
                 <img src={Thunder} className="tshirt-image" style={{ width: '1000px', height: '800px', objectFit: 'cover', margin: '0 auto', display: 'block' }} alt="T-shirt Thunder"/>
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>

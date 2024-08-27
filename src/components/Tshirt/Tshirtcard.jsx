@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tshirtcard.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function TshirtCard({ id, imageSrc, title, description, price, originalPrice, discount }) {
+export default function TshirtCard({ id, imageSrc, title, description, price, originalPrice, discount}) {
+  const navigate = useNavigate();
+  function clickHandler(){
+    navigate(`/category/tshirt/${id}`);
+
+  }
   return (
-    <div className="card">
-      <Link to={`/product/${id}`}>
+    <div className="card" onClick={clickHandler}>
         <img src={imageSrc} alt={title} className="card-image" />
         <div className="card-info">
           <h3 className="card-title">{title}</h3>
@@ -22,7 +27,6 @@ export default function TshirtCard({ id, imageSrc, title, description, price, or
             )}
           </div>
         </div>
-      </Link>
     </div>
   );
 }

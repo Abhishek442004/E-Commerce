@@ -11,6 +11,7 @@ export default function ShirtPage() {
         {TshirtData.map((tshirt) => (
           <TshirtCard
             key={tshirt.id}
+            id = {tshirt.id}
             imageSrc={tshirt.image}
             title={tshirt.name}
             price={tshirt.discounted_price}

@@ -1,10 +1,10 @@
 import React from 'react'
 import MovingCards from '../components/Movingcards/Movingcards'
 
-function HomePage({cards}) {
+function HomePage() {
   return (
     <div>
-        <MovingCards cards = {cards}/>
+        <MovingCards/>
     </div>
   )
 }

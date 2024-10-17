@@ -1,0 +1,34 @@
+.video-grid {
+  height: 800px;
+  display: flex;
+  justify-content: space-between;  
+  gap: 0px;  
+  padding: 0px; 
+  background-image: url('../assets/BGMF.jpg');
+}
+
+
+.video-item {
+  width: 30%;  
+  position: relative;
+}
+
+
+.video-element {
+  width: 100%; 
+  height: 800px;
+  border-radius: 8px;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+
+@media (max-width: 768px) {
+  .video-grid {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  .video-item {
+    width: 100%;  
+  }
+}

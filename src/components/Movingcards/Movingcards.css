@@ -1,114 +1,115 @@
-.home-container {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  color: white;
-  background-color: #111;
-  height: 100vh;
-  background-image: url('../../assets/red-light-round-podium-black-background-mock-up.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@font-face{
+  font-family: 'Samarkan';
+  src: url('../../font/SAMAN___.TTF') format('truetype');
+}
+
+.homepage {
+  position: sticky;
   width: 100%;
-  height: 100%;
-}
-
-.header {
-  padding: 20px;
-}
-
-.main-content {
-  padding: 20px;
-}
-
-.hero {
-  padding: 40px;
-  margin: 20px 0;
+  background-image: url('../../assets/image.png'); /* Adjust based on your design */
+  transition: transform 0.3s ease-in-out;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(0);
   position: relative;
+  z-index: 500; 
+  margin-top: 0px; 
 }
 
-.carousel {
+h1{
+  font-family: 'Samarkan',sans-serif;
+}
+
+.homepage.slide-down {
+  transform: translateY(0);
+}
+
+.homepage.slide-up {
+  transform: translateY(-100%);
+}
+
+.rakt {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-color: transparent;
-}
-
-
-.carousel-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-
-
-
-
-
-
-
-/* .moving-cards-container {
-  width: 100vb;
-  max-width: 900px;
   height: 100vh;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+  text-align: center;
 }
 
-.moving-cards-track {
-  display: flex;
-  transition: transform 0.5s ease;
+.logo-homepage {
+  width: 200px; /* Adjust as needed */
+  height: auto;
 }
 
-.card {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 0 15px;
-  box-sizing: border-box;
-  transition: all 0.5s ease;
+.content h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
 }
 
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-
-.card-content {
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  margin: 0 0 10px 0;
+.shop-now-btn {
+  padding: 10px 20px;
   font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card p {
-  margin: 0;
-  font-size: 0.9em;
-  color: #555;
+.shop-now-btn:hover {
+  background-color: black;
+  color: white;
 }
 
-.moving-cards-track .card:nth-child(3n + 2) {
-  transform: scale(1.1);
-  z-index: 1;
-} */
+
+
+
+.collections-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.collection {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.collections-container :hover{
+ color: black;
+ transition: color 0.5s;
+
+}
+
+.tshirt-collection {
+  background-image: url('../../assets/tshirtbackground.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.poster-collection {
+  background-image: url('../../assets/tshirtbackground.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+.collection-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection h2 {
+  font-style: 'Samarkan',sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}

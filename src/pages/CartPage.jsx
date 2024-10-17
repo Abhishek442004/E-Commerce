@@ -3,27 +3,7 @@ import TshirtData from '../TshirtData';
 import './CartPage.css';
 
 const CartPage = ({cartItems, updateQuantity}) => {
-//   const [cartItems, setCartItems] = useState([]);
 
-// //  funcition to add items to cart
-//   const addToCart = (product) => {
-//     const existingItem = cartItems.find(item => item.id === product.id);
-    
-//     if (existingItem) {
-//       setCartItems(cartItems.map(item =>
-//         item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-//       ));
-//     } else {
-//       setCartItems([...cartItems, { ...product, quantity: 1 }]);
-//     }
-//   };
-
-  // // Function to update quantity
-  // const updateQuantity = (id, amount) => {
-  //   setCartItems(cartItems.map(item => 
-  //     item.id === id ? { ...item, quantity: item.quantity + amount } : item
-  //   ));
-  // };
 
   // Calculate total price
   const calculateTotal = () => {
